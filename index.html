@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Infoecuestre Live</title>
 
-  <!-- Tailwind -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -21,56 +18,76 @@
   </style>
 </head>
 
-<body class="min-h-screen">
+<body class="min-h-screen flex flex-col">
 
   <!-- HEADER -->
   <header class="px-4 py-3 border-b border-stone-200">
-    <h1 class="text-xl font-semibold">
-      Infoecuestre Live
-    </h1>
+    <h1 class="text-xl font-semibold">Infoecuestre Live</h1>
   </header>
 
   <!-- MAIN CONTENT -->
-  <main class="max-w-7xl mx-auto px-4 py-6">
+  <main class="max-w-7xl mx-auto px-4 py-6 flex-1 space-y-8">
 
+    <!-- LIVESTREAM + INFO -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-      <!-- LIVESTREAM -->
+      <!-- Video -->
       <div class="lg:col-span-2">
         <div class="w-full aspect-video rounded-lg overflow-hidden bg-black">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ornCSVl8HBM?si=wlTAvA-dcrJCjKAG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/v_jbQFfzr3A"
+            title="Infoecuestre Live"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
 
-      <!-- INFO DEL CONCURSO -->
+      <!-- Info del concurso -->
       <aside class="bg-stone-100 rounded-lg p-4 space-y-3">
-
-        <h2 class="text-lg font-semibold">
-          COPA VERANO 2026
-        </h2>
-
-        <p class="text-sm text-gray-600">
-COPA DE VERANO 2026 - PARQUE CAMET - MAR DEL PLATA  
-JORNADA DIA 6 DE ENERO 2026 - 9:00 am 
-PARTE 2
-        </p>
-
-        <div class="pt-2 border-t border-stone-300">
-          <p class="text-sm">
-            <span class="font-medium">Inicio de la prueba:</span><br />
-            08:30 AM
-          </p>
-        </div>
-
+        <h2 class="text-lg font-semibold">COPA VERANO 2026</h2>
+        <p class="text-sm text-gray-600">Centro Hípico General Pueyrredón</p>
+        <p class="text-sm"><span class="font-medium">Inicio de la prueba:</span> 08:30 AM</p>
       </aside>
-
     </div>
+
+    <!-- SPONSORS -->
+    <section>
+      <h2 class="text-lg font-semibold mb-4">Empresas que apoyan nuestras transmisiones</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div class="bg-black text-white p-3 flex items-center justify-center rounded">FEA</div>
+        <div class="bg-black text-white p-3 flex items-center justify-center rounded">Club Hípico</div>
+        <div class="bg-black text-white p-3 flex items-center justify-center rounded">Equus Clan</div>
+        <div class="bg-black text-white p-3 flex items-center justify-center rounded">Double Clear</div>
+        <div class="bg-black text-white p-3 flex items-center justify-center rounded">GA</div>
+        <div class="bg-black text-white p-3 flex items-center justify-center rounded">Sponsor X</div>
+      </div>
+    </section>
+
+    <!-- CALENDARIO DE EJEMPLO -->
+    <section>
+      <h2 class="text-lg font-semibold mb-4">Calendario de concursos</h2>
+      <div class="space-y-3">
+        <div class="p-3 bg-stone-100 rounded">
+          <p class="font-medium">Gran Premio República</p>
+          <p class="text-sm text-gray-600">15/01/2026 - Club Alemán</p>
+        </div>
+        <div class="p-3 bg-stone-100 rounded">
+          <p class="font-medium">Final Federal</p>
+          <p class="text-sm text-gray-600">22/01/2026 - Jockey Club</p>
+        </div>
+        <div class="p-3 bg-stone-100 rounded">
+          <p class="font-medium">Encuentro Nacional de Ponies</p>
+          <p class="text-sm text-gray-600">30/01/2026 - Centro Hípico General Pueyrredón</p>
+        </div>
+      </div>
+    </section>
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="text-center text-xs text-gray-500 py-4">
+  <footer class="text-center text-xs text-gray-500 py-4 border-t border-stone-200">
     © Infoecuestre
   </footer>
 

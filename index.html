@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Infoecuestre Live</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafaf9;
+      color: #1c1917;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen">
+
+  <!-- HEADER -->
+  <header class="px-4 py-3 border-b border-stone-200">
+    <h1 class="text-xl font-semibold">
+      Infoecuestre Live
+    </h1>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-7xl mx-auto px-4 py-6">
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <!-- LIVESTREAM -->
+      <div class="lg:col-span-2">
+        <div class="w-full aspect-video rounded-lg overflow-hidden bg-black">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ornCSVl8HBM?si=wlTAvA-dcrJCjKAG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+      </div>
+
+      <!-- INFO DEL CONCURSO -->
+      <aside class="bg-stone-100 rounded-lg p-4 space-y-3">
+
+        <h2 class="text-lg font-semibold">
+          COPA VERANO 2026
+        </h2>
+
+        <p class="text-sm text-gray-600">
+COPA DE VERANO 2026 - PARQUE CAMET - MAR DEL PLATA  
+JORNADA DIA 6 DE ENERO 2026 - 9:00 am 
+PARTE 2
+        </p>
+
+        <div class="pt-2 border-t border-stone-300">
+          <p class="text-sm">
+            <span class="font-medium">Inicio de la prueba:</span><br />
+            08:30 AM
+          </p>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center text-xs text-gray-500 py-4">
+    © Infoecuestre
+  </footer>
+
+</body>
+</html>
